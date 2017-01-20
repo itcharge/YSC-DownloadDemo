@@ -1,0 +1,802 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42DAC2295B052892105809DE /* libPods-YSC-DownloadDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC60065CD1ED84B3792358B4 /* libPods-YSC-DownloadDemo.a */; };
+		9319ED161E308F2300EFD337 /* AFNetworkingDownloadFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9319ED141E308F2300EFD337 /* AFNetworkingDownloadFileViewController.m */; };
+		9319ED171E308F2300EFD337 /* AFNetworkingDownloadFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9319ED151E308F2300EFD337 /* AFNetworkingDownloadFileViewController.xib */; };
+		93DEE5F91E30FA8100CA8569 /* AFNetworkingOfflineResumeDownloadFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DEE5F71E30FA8100CA8569 /* AFNetworkingOfflineResumeDownloadFileViewController.m */; };
+		93DEE5FA1E30FA8100CA8569 /* AFNetworkingOfflineResumeDownloadFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93DEE5F81E30FA8100CA8569 /* AFNetworkingOfflineResumeDownloadFileViewController.xib */; };
+		93DEE5FE1E30FAE300CA8569 /* NSURLSessionOfflineResumeDownloadFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DEE5FC1E30FAE300CA8569 /* NSURLSessionOfflineResumeDownloadFileViewController.m */; };
+		93DEE5FF1E30FAE300CA8569 /* NSURLSessionOfflineResumeDownloadFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93DEE5FD1E30FAE300CA8569 /* NSURLSessionOfflineResumeDownloadFileViewController.xib */; };
+		93E88D1E1E2F65FA00DB4C04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E88D1D1E2F65FA00DB4C04 /* main.m */; };
+		93E88D211E2F65FA00DB4C04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E88D201E2F65FA00DB4C04 /* AppDelegate.m */; };
+		93E88D241E2F65FA00DB4C04 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E88D231E2F65FA00DB4C04 /* ViewController.m */; };
+		93E88D271E2F65FA00DB4C04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93E88D251E2F65FA00DB4C04 /* Main.storyboard */; };
+		93E88D291E2F65FA00DB4C04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93E88D281E2F65FA00DB4C04 /* Assets.xcassets */; };
+		93E88D2C1E2F65FA00DB4C04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93E88D2A1E2F65FA00DB4C04 /* LaunchScreen.storyboard */; };
+		93E88D371E2F65FA00DB4C04 /* YSC_DownloadDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E88D361E2F65FA00DB4C04 /* YSC_DownloadDemoTests.m */; };
+		93E88D421E2F65FA00DB4C04 /* YSC_DownloadDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E88D411E2F65FA00DB4C04 /* YSC_DownloadDemoUITests.m */; };
+		93E88D5D1E2F77E400DB4C04 /* NSDataDownloadSmallFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E88D5B1E2F77E400DB4C04 /* NSDataDownloadSmallFileViewController.m */; };
+		93E88D5E1E2F77E400DB4C04 /* NSDataDownloadSmallFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93E88D5C1E2F77E400DB4C04 /* NSDataDownloadSmallFileViewController.xib */; };
+		93E88D631E2F796000DB4C04 /* NSURLConnectionDownloadSmallFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E88D611E2F796000DB4C04 /* NSURLConnectionDownloadSmallFileViewController.m */; };
+		93E88D641E2F796000DB4C04 /* NSURLConnectionDownloadSmallFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93E88D621E2F796000DB4C04 /* NSURLConnectionDownloadSmallFileViewController.xib */; };
+		93E88D691E2F8B3A00DB4C04 /* NSURLConnectionDownloadBigFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E88D671E2F8B3A00DB4C04 /* NSURLConnectionDownloadBigFileViewController.m */; };
+		93E88D6A1E2F8B3A00DB4C04 /* NSURLConnectionDownloadBigFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93E88D681E2F8B3A00DB4C04 /* NSURLConnectionDownloadBigFileViewController.xib */; };
+		93E88D6F1E2F95BF00DB4C04 /* NSURLConnectionResumeDownloadFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E88D6D1E2F95BF00DB4C04 /* NSURLConnectionResumeDownloadFileViewController.m */; };
+		93E88D701E2F95BF00DB4C04 /* NSURLConnectionResumeDownloadFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93E88D6E1E2F95BF00DB4C04 /* NSURLConnectionResumeDownloadFileViewController.xib */; };
+		93E88D761E2FA27B00DB4C04 /* NSURLSessionBlockDownloadFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E88D741E2FA27B00DB4C04 /* NSURLSessionBlockDownloadFileViewController.m */; };
+		93E88D771E2FA27B00DB4C04 /* NSURLSessionBlockDownloadFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93E88D751E2FA27B00DB4C04 /* NSURLSessionBlockDownloadFileViewController.xib */; };
+		93E88D7B1E2FA53500DB4C04 /* NSURLSessionDelegateDownloadFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E88D791E2FA53500DB4C04 /* NSURLSessionDelegateDownloadFileViewController.m */; };
+		93E88D7C1E2FA53500DB4C04 /* NSURLSessionDelegateDownloadFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93E88D7A1E2FA53500DB4C04 /* NSURLSessionDelegateDownloadFileViewController.xib */; };
+		93E88D821E2FA84B00DB4C04 /* NSURLSessionResumeDownloadFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E88D801E2FA84B00DB4C04 /* NSURLSessionResumeDownloadFileViewController.m */; };
+		93E88D831E2FA84B00DB4C04 /* NSURLSessionResumeDownloadFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93E88D811E2FA84B00DB4C04 /* NSURLSessionResumeDownloadFileViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93E88D331E2F65FA00DB4C04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93E88D111E2F65FA00DB4C04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93E88D181E2F65FA00DB4C04;
+			remoteInfo = "YSC-DownloadDemo";
+		};
+		93E88D3E1E2F65FA00DB4C04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93E88D111E2F65FA00DB4C04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93E88D181E2F65FA00DB4C04;
+			remoteInfo = "YSC-DownloadDemo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9319ED131E308F2300EFD337 /* AFNetworkingDownloadFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingDownloadFileViewController.h; sourceTree = "<group>"; };
+		9319ED141E308F2300EFD337 /* AFNetworkingDownloadFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingDownloadFileViewController.m; sourceTree = "<group>"; };
+		9319ED151E308F2300EFD337 /* AFNetworkingDownloadFileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AFNetworkingDownloadFileViewController.xib; sourceTree = "<group>"; };
+		93DEE5F61E30FA8100CA8569 /* AFNetworkingOfflineResumeDownloadFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingOfflineResumeDownloadFileViewController.h; sourceTree = "<group>"; };
+		93DEE5F71E30FA8100CA8569 /* AFNetworkingOfflineResumeDownloadFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingOfflineResumeDownloadFileViewController.m; sourceTree = "<group>"; };
+		93DEE5F81E30FA8100CA8569 /* AFNetworkingOfflineResumeDownloadFileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AFNetworkingOfflineResumeDownloadFileViewController.xib; sourceTree = "<group>"; };
+		93DEE5FB1E30FAE300CA8569 /* NSURLSessionOfflineResumeDownloadFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLSessionOfflineResumeDownloadFileViewController.h; sourceTree = "<group>"; };
+		93DEE5FC1E30FAE300CA8569 /* NSURLSessionOfflineResumeDownloadFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionOfflineResumeDownloadFileViewController.m; sourceTree = "<group>"; };
+		93DEE5FD1E30FAE300CA8569 /* NSURLSessionOfflineResumeDownloadFileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSURLSessionOfflineResumeDownloadFileViewController.xib; sourceTree = "<group>"; };
+		93E88D191E2F65FA00DB4C04 /* YSC-DownloadDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YSC-DownloadDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93E88D1D1E2F65FA00DB4C04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93E88D1F1E2F65FA00DB4C04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		93E88D201E2F65FA00DB4C04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		93E88D221E2F65FA00DB4C04 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		93E88D231E2F65FA00DB4C04 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		93E88D261E2F65FA00DB4C04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93E88D281E2F65FA00DB4C04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93E88D2B1E2F65FA00DB4C04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93E88D2D1E2F65FA00DB4C04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93E88D321E2F65FA00DB4C04 /* YSC-DownloadDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "YSC-DownloadDemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93E88D361E2F65FA00DB4C04 /* YSC_DownloadDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSC_DownloadDemoTests.m; sourceTree = "<group>"; };
+		93E88D381E2F65FA00DB4C04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93E88D3D1E2F65FA00DB4C04 /* YSC-DownloadDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "YSC-DownloadDemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93E88D411E2F65FA00DB4C04 /* YSC_DownloadDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSC_DownloadDemoUITests.m; sourceTree = "<group>"; };
+		93E88D431E2F65FA00DB4C04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93E88D5A1E2F77E400DB4C04 /* NSDataDownloadSmallFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataDownloadSmallFileViewController.h; sourceTree = "<group>"; };
+		93E88D5B1E2F77E400DB4C04 /* NSDataDownloadSmallFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataDownloadSmallFileViewController.m; sourceTree = "<group>"; };
+		93E88D5C1E2F77E400DB4C04 /* NSDataDownloadSmallFileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSDataDownloadSmallFileViewController.xib; sourceTree = "<group>"; };
+		93E88D601E2F796000DB4C04 /* NSURLConnectionDownloadSmallFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLConnectionDownloadSmallFileViewController.h; sourceTree = "<group>"; };
+		93E88D611E2F796000DB4C04 /* NSURLConnectionDownloadSmallFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLConnectionDownloadSmallFileViewController.m; sourceTree = "<group>"; };
+		93E88D621E2F796000DB4C04 /* NSURLConnectionDownloadSmallFileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSURLConnectionDownloadSmallFileViewController.xib; sourceTree = "<group>"; };
+		93E88D661E2F8B3A00DB4C04 /* NSURLConnectionDownloadBigFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLConnectionDownloadBigFileViewController.h; sourceTree = "<group>"; };
+		93E88D671E2F8B3A00DB4C04 /* NSURLConnectionDownloadBigFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLConnectionDownloadBigFileViewController.m; sourceTree = "<group>"; };
+		93E88D681E2F8B3A00DB4C04 /* NSURLConnectionDownloadBigFileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSURLConnectionDownloadBigFileViewController.xib; sourceTree = "<group>"; };
+		93E88D6C1E2F95BF00DB4C04 /* NSURLConnectionResumeDownloadFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLConnectionResumeDownloadFileViewController.h; sourceTree = "<group>"; };
+		93E88D6D1E2F95BF00DB4C04 /* NSURLConnectionResumeDownloadFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLConnectionResumeDownloadFileViewController.m; sourceTree = "<group>"; };
+		93E88D6E1E2F95BF00DB4C04 /* NSURLConnectionResumeDownloadFileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSURLConnectionResumeDownloadFileViewController.xib; sourceTree = "<group>"; };
+		93E88D731E2FA27B00DB4C04 /* NSURLSessionBlockDownloadFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLSessionBlockDownloadFileViewController.h; sourceTree = "<group>"; };
+		93E88D741E2FA27B00DB4C04 /* NSURLSessionBlockDownloadFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionBlockDownloadFileViewController.m; sourceTree = "<group>"; };
+		93E88D751E2FA27B00DB4C04 /* NSURLSessionBlockDownloadFileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSURLSessionBlockDownloadFileViewController.xib; sourceTree = "<group>"; };
+		93E88D781E2FA53500DB4C04 /* NSURLSessionDelegateDownloadFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLSessionDelegateDownloadFileViewController.h; sourceTree = "<group>"; };
+		93E88D791E2FA53500DB4C04 /* NSURLSessionDelegateDownloadFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionDelegateDownloadFileViewController.m; sourceTree = "<group>"; };
+		93E88D7A1E2FA53500DB4C04 /* NSURLSessionDelegateDownloadFileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSURLSessionDelegateDownloadFileViewController.xib; sourceTree = "<group>"; };
+		93E88D7F1E2FA84B00DB4C04 /* NSURLSessionResumeDownloadFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLSessionResumeDownloadFileViewController.h; sourceTree = "<group>"; };
+		93E88D801E2FA84B00DB4C04 /* NSURLSessionResumeDownloadFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionResumeDownloadFileViewController.m; sourceTree = "<group>"; };
+		93E88D811E2FA84B00DB4C04 /* NSURLSessionResumeDownloadFileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSURLSessionResumeDownloadFileViewController.xib; sourceTree = "<group>"; };
+		AA8F2B480D39FC018657312D /* Pods-YSC-DownloadDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSC-DownloadDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YSC-DownloadDemo/Pods-YSC-DownloadDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F60DBB32116404AE29C6976C /* Pods-YSC-DownloadDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSC-DownloadDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-YSC-DownloadDemo/Pods-YSC-DownloadDemo.release.xcconfig"; sourceTree = "<group>"; };
+		FC60065CD1ED84B3792358B4 /* libPods-YSC-DownloadDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YSC-DownloadDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93E88D161E2F65FA00DB4C04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42DAC2295B052892105809DE /* libPods-YSC-DownloadDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E88D2F1E2F65FA00DB4C04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E88D3A1E2F65FA00DB4C04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D5C0C51BA9797106CCBE695 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC60065CD1ED84B3792358B4 /* libPods-YSC-DownloadDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9319ED121E308EFF00EFD337 /* 使用AFNetworking下载文件 */ = {
+			isa = PBXGroup;
+			children = (
+				9319ED131E308F2300EFD337 /* AFNetworkingDownloadFileViewController.h */,
+				9319ED141E308F2300EFD337 /* AFNetworkingDownloadFileViewController.m */,
+				9319ED151E308F2300EFD337 /* AFNetworkingDownloadFileViewController.xib */,
+			);
+			name = "使用AFNetworking下载文件";
+			sourceTree = "<group>";
+		};
+		9319ED181E308F2C00EFD337 /* 使用AFNetworking断点下载（支持离线） */ = {
+			isa = PBXGroup;
+			children = (
+				93DEE5F61E30FA8100CA8569 /* AFNetworkingOfflineResumeDownloadFileViewController.h */,
+				93DEE5F71E30FA8100CA8569 /* AFNetworkingOfflineResumeDownloadFileViewController.m */,
+				93DEE5F81E30FA8100CA8569 /* AFNetworkingOfflineResumeDownloadFileViewController.xib */,
+			);
+			name = "使用AFNetworking断点下载（支持离线）";
+			sourceTree = "<group>";
+		};
+		93DEE5F51E30FA4E00CA8569 /* 使用NSURLSession断点下载（支持离线） */ = {
+			isa = PBXGroup;
+			children = (
+				93DEE5FB1E30FAE300CA8569 /* NSURLSessionOfflineResumeDownloadFileViewController.h */,
+				93DEE5FC1E30FAE300CA8569 /* NSURLSessionOfflineResumeDownloadFileViewController.m */,
+				93DEE5FD1E30FAE300CA8569 /* NSURLSessionOfflineResumeDownloadFileViewController.xib */,
+			);
+			name = "使用NSURLSession断点下载（支持离线）";
+			sourceTree = "<group>";
+		};
+		93E88D101E2F65FA00DB4C04 = {
+			isa = PBXGroup;
+			children = (
+				93E88D1B1E2F65FA00DB4C04 /* YSC-DownloadDemo */,
+				93E88D351E2F65FA00DB4C04 /* YSC-DownloadDemoTests */,
+				93E88D401E2F65FA00DB4C04 /* YSC-DownloadDemoUITests */,
+				93E88D1A1E2F65FA00DB4C04 /* Products */,
+				FA84CC3D68C5DB05450C5028 /* Pods */,
+				1D5C0C51BA9797106CCBE695 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		93E88D1A1E2F65FA00DB4C04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93E88D191E2F65FA00DB4C04 /* YSC-DownloadDemo.app */,
+				93E88D321E2F65FA00DB4C04 /* YSC-DownloadDemoTests.xctest */,
+				93E88D3D1E2F65FA00DB4C04 /* YSC-DownloadDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93E88D1B1E2F65FA00DB4C04 /* YSC-DownloadDemo */ = {
+			isa = PBXGroup;
+			children = (
+				93E88D541E2F672C00DB4C04 /* 使用NSData下载小文件 */,
+				93E88D5F1E2F792800DB4C04 /* 使用NSURLConnection下载小文件 */,
+				93E88D651E2F8B0500DB4C04 /* 使用NSURLConnection下载大文件 */,
+				93E88D6B1E2F94E100DB4C04 /* 使用NSURLConnection断点下载（支持离线） */,
+				93E88D711E2FA1FD00DB4C04 /* 使用NSURLSession的block方法下载文件 */,
+				93E88D721E2FA21A00DB4C04 /* 使用NSURLSession的delegate方法下载文件 */,
+				93E88D7D1E2FA80400DB4C04 /* 使用NSURLSession断点下载（不支持离线） */,
+				93DEE5F51E30FA4E00CA8569 /* 使用NSURLSession断点下载（支持离线） */,
+				9319ED121E308EFF00EFD337 /* 使用AFNetworking下载文件 */,
+				9319ED181E308F2C00EFD337 /* 使用AFNetworking断点下载（支持离线） */,
+				93E88D1F1E2F65FA00DB4C04 /* AppDelegate.h */,
+				93E88D201E2F65FA00DB4C04 /* AppDelegate.m */,
+				93E88D221E2F65FA00DB4C04 /* ViewController.h */,
+				93E88D231E2F65FA00DB4C04 /* ViewController.m */,
+				93E88D251E2F65FA00DB4C04 /* Main.storyboard */,
+				93E88D281E2F65FA00DB4C04 /* Assets.xcassets */,
+				93E88D2A1E2F65FA00DB4C04 /* LaunchScreen.storyboard */,
+				93E88D2D1E2F65FA00DB4C04 /* Info.plist */,
+				93E88D1C1E2F65FA00DB4C04 /* Supporting Files */,
+			);
+			path = "YSC-DownloadDemo";
+			sourceTree = "<group>";
+		};
+		93E88D1C1E2F65FA00DB4C04 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93E88D1D1E2F65FA00DB4C04 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93E88D351E2F65FA00DB4C04 /* YSC-DownloadDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				93E88D361E2F65FA00DB4C04 /* YSC_DownloadDemoTests.m */,
+				93E88D381E2F65FA00DB4C04 /* Info.plist */,
+			);
+			path = "YSC-DownloadDemoTests";
+			sourceTree = "<group>";
+		};
+		93E88D401E2F65FA00DB4C04 /* YSC-DownloadDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				93E88D411E2F65FA00DB4C04 /* YSC_DownloadDemoUITests.m */,
+				93E88D431E2F65FA00DB4C04 /* Info.plist */,
+			);
+			path = "YSC-DownloadDemoUITests";
+			sourceTree = "<group>";
+		};
+		93E88D541E2F672C00DB4C04 /* 使用NSData下载小文件 */ = {
+			isa = PBXGroup;
+			children = (
+				93E88D5A1E2F77E400DB4C04 /* NSDataDownloadSmallFileViewController.h */,
+				93E88D5B1E2F77E400DB4C04 /* NSDataDownloadSmallFileViewController.m */,
+				93E88D5C1E2F77E400DB4C04 /* NSDataDownloadSmallFileViewController.xib */,
+			);
+			name = "使用NSData下载小文件";
+			sourceTree = "<group>";
+		};
+		93E88D5F1E2F792800DB4C04 /* 使用NSURLConnection下载小文件 */ = {
+			isa = PBXGroup;
+			children = (
+				93E88D601E2F796000DB4C04 /* NSURLConnectionDownloadSmallFileViewController.h */,
+				93E88D611E2F796000DB4C04 /* NSURLConnectionDownloadSmallFileViewController.m */,
+				93E88D621E2F796000DB4C04 /* NSURLConnectionDownloadSmallFileViewController.xib */,
+			);
+			name = "使用NSURLConnection下载小文件";
+			sourceTree = "<group>";
+		};
+		93E88D651E2F8B0500DB4C04 /* 使用NSURLConnection下载大文件 */ = {
+			isa = PBXGroup;
+			children = (
+				93E88D661E2F8B3A00DB4C04 /* NSURLConnectionDownloadBigFileViewController.h */,
+				93E88D671E2F8B3A00DB4C04 /* NSURLConnectionDownloadBigFileViewController.m */,
+				93E88D681E2F8B3A00DB4C04 /* NSURLConnectionDownloadBigFileViewController.xib */,
+			);
+			name = "使用NSURLConnection下载大文件";
+			sourceTree = "<group>";
+		};
+		93E88D6B1E2F94E100DB4C04 /* 使用NSURLConnection断点下载（支持离线） */ = {
+			isa = PBXGroup;
+			children = (
+				93E88D6C1E2F95BF00DB4C04 /* NSURLConnectionResumeDownloadFileViewController.h */,
+				93E88D6D1E2F95BF00DB4C04 /* NSURLConnectionResumeDownloadFileViewController.m */,
+				93E88D6E1E2F95BF00DB4C04 /* NSURLConnectionResumeDownloadFileViewController.xib */,
+			);
+			name = "使用NSURLConnection断点下载（支持离线）";
+			sourceTree = "<group>";
+		};
+		93E88D711E2FA1FD00DB4C04 /* 使用NSURLSession的block方法下载文件 */ = {
+			isa = PBXGroup;
+			children = (
+				93E88D731E2FA27B00DB4C04 /* NSURLSessionBlockDownloadFileViewController.h */,
+				93E88D741E2FA27B00DB4C04 /* NSURLSessionBlockDownloadFileViewController.m */,
+				93E88D751E2FA27B00DB4C04 /* NSURLSessionBlockDownloadFileViewController.xib */,
+			);
+			name = "使用NSURLSession的block方法下载文件";
+			sourceTree = "<group>";
+		};
+		93E88D721E2FA21A00DB4C04 /* 使用NSURLSession的delegate方法下载文件 */ = {
+			isa = PBXGroup;
+			children = (
+				93E88D781E2FA53500DB4C04 /* NSURLSessionDelegateDownloadFileViewController.h */,
+				93E88D791E2FA53500DB4C04 /* NSURLSessionDelegateDownloadFileViewController.m */,
+				93E88D7A1E2FA53500DB4C04 /* NSURLSessionDelegateDownloadFileViewController.xib */,
+			);
+			name = "使用NSURLSession的delegate方法下载文件";
+			sourceTree = "<group>";
+		};
+		93E88D7D1E2FA80400DB4C04 /* 使用NSURLSession断点下载（不支持离线） */ = {
+			isa = PBXGroup;
+			children = (
+				93E88D7F1E2FA84B00DB4C04 /* NSURLSessionResumeDownloadFileViewController.h */,
+				93E88D801E2FA84B00DB4C04 /* NSURLSessionResumeDownloadFileViewController.m */,
+				93E88D811E2FA84B00DB4C04 /* NSURLSessionResumeDownloadFileViewController.xib */,
+			);
+			name = "使用NSURLSession断点下载（不支持离线）";
+			sourceTree = "<group>";
+		};
+		FA84CC3D68C5DB05450C5028 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA8F2B480D39FC018657312D /* Pods-YSC-DownloadDemo.debug.xcconfig */,
+				F60DBB32116404AE29C6976C /* Pods-YSC-DownloadDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93E88D181E2F65FA00DB4C04 /* YSC-DownloadDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93E88D461E2F65FA00DB4C04 /* Build configuration list for PBXNativeTarget "YSC-DownloadDemo" */;
+			buildPhases = (
+				E55AEFD1B093903906CE8577 /* [CP] Check Pods Manifest.lock */,
+				93E88D151E2F65FA00DB4C04 /* Sources */,
+				93E88D161E2F65FA00DB4C04 /* Frameworks */,
+				93E88D171E2F65FA00DB4C04 /* Resources */,
+				2F49262218209076BE7084A8 /* [CP] Embed Pods Frameworks */,
+				BFA8314BA314FD7C4AE01034 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "YSC-DownloadDemo";
+			productName = "YSC-DownloadDemo";
+			productReference = 93E88D191E2F65FA00DB4C04 /* YSC-DownloadDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93E88D311E2F65FA00DB4C04 /* YSC-DownloadDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93E88D491E2F65FA00DB4C04 /* Build configuration list for PBXNativeTarget "YSC-DownloadDemoTests" */;
+			buildPhases = (
+				93E88D2E1E2F65FA00DB4C04 /* Sources */,
+				93E88D2F1E2F65FA00DB4C04 /* Frameworks */,
+				93E88D301E2F65FA00DB4C04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93E88D341E2F65FA00DB4C04 /* PBXTargetDependency */,
+			);
+			name = "YSC-DownloadDemoTests";
+			productName = "YSC-DownloadDemoTests";
+			productReference = 93E88D321E2F65FA00DB4C04 /* YSC-DownloadDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		93E88D3C1E2F65FA00DB4C04 /* YSC-DownloadDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93E88D4C1E2F65FA00DB4C04 /* Build configuration list for PBXNativeTarget "YSC-DownloadDemoUITests" */;
+			buildPhases = (
+				93E88D391E2F65FA00DB4C04 /* Sources */,
+				93E88D3A1E2F65FA00DB4C04 /* Frameworks */,
+				93E88D3B1E2F65FA00DB4C04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93E88D3F1E2F65FA00DB4C04 /* PBXTargetDependency */,
+			);
+			name = "YSC-DownloadDemoUITests";
+			productName = "YSC-DownloadDemoUITests";
+			productReference = 93E88D3D1E2F65FA00DB4C04 /* YSC-DownloadDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93E88D111E2F65FA00DB4C04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = lianai911;
+				TargetAttributes = {
+					93E88D181E2F65FA00DB4C04 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = APJQQSPWSG;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+					93E88D311E2F65FA00DB4C04 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = APJQQSPWSG;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 93E88D181E2F65FA00DB4C04;
+					};
+					93E88D3C1E2F65FA00DB4C04 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = APJQQSPWSG;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 93E88D181E2F65FA00DB4C04;
+					};
+				};
+			};
+			buildConfigurationList = 93E88D141E2F65FA00DB4C04 /* Build configuration list for PBXProject "YSC-DownloadDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93E88D101E2F65FA00DB4C04;
+			productRefGroup = 93E88D1A1E2F65FA00DB4C04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93E88D181E2F65FA00DB4C04 /* YSC-DownloadDemo */,
+				93E88D311E2F65FA00DB4C04 /* YSC-DownloadDemoTests */,
+				93E88D3C1E2F65FA00DB4C04 /* YSC-DownloadDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93E88D171E2F65FA00DB4C04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9319ED171E308F2300EFD337 /* AFNetworkingDownloadFileViewController.xib in Resources */,
+				93E88D6A1E2F8B3A00DB4C04 /* NSURLConnectionDownloadBigFileViewController.xib in Resources */,
+				93E88D2C1E2F65FA00DB4C04 /* LaunchScreen.storyboard in Resources */,
+				93E88D771E2FA27B00DB4C04 /* NSURLSessionBlockDownloadFileViewController.xib in Resources */,
+				93E88D831E2FA84B00DB4C04 /* NSURLSessionResumeDownloadFileViewController.xib in Resources */,
+				93E88D5E1E2F77E400DB4C04 /* NSDataDownloadSmallFileViewController.xib in Resources */,
+				93E88D641E2F796000DB4C04 /* NSURLConnectionDownloadSmallFileViewController.xib in Resources */,
+				93DEE5FA1E30FA8100CA8569 /* AFNetworkingOfflineResumeDownloadFileViewController.xib in Resources */,
+				93DEE5FF1E30FAE300CA8569 /* NSURLSessionOfflineResumeDownloadFileViewController.xib in Resources */,
+				93E88D291E2F65FA00DB4C04 /* Assets.xcassets in Resources */,
+				93E88D7C1E2FA53500DB4C04 /* NSURLSessionDelegateDownloadFileViewController.xib in Resources */,
+				93E88D271E2F65FA00DB4C04 /* Main.storyboard in Resources */,
+				93E88D701E2F95BF00DB4C04 /* NSURLConnectionResumeDownloadFileViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E88D301E2F65FA00DB4C04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E88D3B1E2F65FA00DB4C04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F49262218209076BE7084A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YSC-DownloadDemo/Pods-YSC-DownloadDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFA8314BA314FD7C4AE01034 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YSC-DownloadDemo/Pods-YSC-DownloadDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E55AEFD1B093903906CE8577 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93E88D151E2F65FA00DB4C04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93E88D241E2F65FA00DB4C04 /* ViewController.m in Sources */,
+				93E88D7B1E2FA53500DB4C04 /* NSURLSessionDelegateDownloadFileViewController.m in Sources */,
+				93E88D631E2F796000DB4C04 /* NSURLConnectionDownloadSmallFileViewController.m in Sources */,
+				93E88D761E2FA27B00DB4C04 /* NSURLSessionBlockDownloadFileViewController.m in Sources */,
+				93DEE5FE1E30FAE300CA8569 /* NSURLSessionOfflineResumeDownloadFileViewController.m in Sources */,
+				93E88D691E2F8B3A00DB4C04 /* NSURLConnectionDownloadBigFileViewController.m in Sources */,
+				93DEE5F91E30FA8100CA8569 /* AFNetworkingOfflineResumeDownloadFileViewController.m in Sources */,
+				93E88D6F1E2F95BF00DB4C04 /* NSURLConnectionResumeDownloadFileViewController.m in Sources */,
+				9319ED161E308F2300EFD337 /* AFNetworkingDownloadFileViewController.m in Sources */,
+				93E88D5D1E2F77E400DB4C04 /* NSDataDownloadSmallFileViewController.m in Sources */,
+				93E88D821E2FA84B00DB4C04 /* NSURLSessionResumeDownloadFileViewController.m in Sources */,
+				93E88D211E2F65FA00DB4C04 /* AppDelegate.m in Sources */,
+				93E88D1E1E2F65FA00DB4C04 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E88D2E1E2F65FA00DB4C04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93E88D371E2F65FA00DB4C04 /* YSC_DownloadDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E88D391E2F65FA00DB4C04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93E88D421E2F65FA00DB4C04 /* YSC_DownloadDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93E88D341E2F65FA00DB4C04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93E88D181E2F65FA00DB4C04 /* YSC-DownloadDemo */;
+			targetProxy = 93E88D331E2F65FA00DB4C04 /* PBXContainerItemProxy */;
+		};
+		93E88D3F1E2F65FA00DB4C04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93E88D181E2F65FA00DB4C04 /* YSC-DownloadDemo */;
+			targetProxy = 93E88D3E1E2F65FA00DB4C04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		93E88D251E2F65FA00DB4C04 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93E88D261E2F65FA00DB4C04 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		93E88D2A1E2F65FA00DB4C04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93E88D2B1E2F65FA00DB4C04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93E88D441E2F65FA00DB4C04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		93E88D451E2F65FA00DB4C04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93E88D471E2F65FA00DB4C04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA8F2B480D39FC018657312D /* Pods-YSC-DownloadDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = APJQQSPWSG;
+				INFOPLIST_FILE = "YSC-DownloadDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.lianai911.YSC-DownloadDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		93E88D481E2F65FA00DB4C04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F60DBB32116404AE29C6976C /* Pods-YSC-DownloadDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = APJQQSPWSG;
+				INFOPLIST_FILE = "YSC-DownloadDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.lianai911.YSC-DownloadDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		93E88D4A1E2F65FA00DB4C04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = APJQQSPWSG;
+				INFOPLIST_FILE = "YSC-DownloadDemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.lianai911.YSC-DownloadDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YSC-DownloadDemo.app/YSC-DownloadDemo";
+			};
+			name = Debug;
+		};
+		93E88D4B1E2F65FA00DB4C04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = APJQQSPWSG;
+				INFOPLIST_FILE = "YSC-DownloadDemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.lianai911.YSC-DownloadDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YSC-DownloadDemo.app/YSC-DownloadDemo";
+			};
+			name = Release;
+		};
+		93E88D4D1E2F65FA00DB4C04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = APJQQSPWSG;
+				INFOPLIST_FILE = "YSC-DownloadDemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.lianai911.YSC-DownloadDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "YSC-DownloadDemo";
+			};
+			name = Debug;
+		};
+		93E88D4E1E2F65FA00DB4C04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = APJQQSPWSG;
+				INFOPLIST_FILE = "YSC-DownloadDemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.lianai911.YSC-DownloadDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "YSC-DownloadDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93E88D141E2F65FA00DB4C04 /* Build configuration list for PBXProject "YSC-DownloadDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93E88D441E2F65FA00DB4C04 /* Debug */,
+				93E88D451E2F65FA00DB4C04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93E88D461E2F65FA00DB4C04 /* Build configuration list for PBXNativeTarget "YSC-DownloadDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93E88D471E2F65FA00DB4C04 /* Debug */,
+				93E88D481E2F65FA00DB4C04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93E88D491E2F65FA00DB4C04 /* Build configuration list for PBXNativeTarget "YSC-DownloadDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93E88D4A1E2F65FA00DB4C04 /* Debug */,
+				93E88D4B1E2F65FA00DB4C04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93E88D4C1E2F65FA00DB4C04 /* Build configuration list for PBXNativeTarget "YSC-DownloadDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93E88D4D1E2F65FA00DB4C04 /* Debug */,
+				93E88D4E1E2F65FA00DB4C04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93E88D111E2F65FA00DB4C04 /* Project object */;
+}
