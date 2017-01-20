@@ -27,7 +27,7 @@
  */
 - (IBAction)downloadBtnClicked:(UIButton *)sender {
     // 创建下载路径
-    NSURL *url = [NSURL URLWithString:@"http://pics.sc.chinaz.com/files/pic/pic9/201508/apic14052.jpg"];
+    NSURL *url = [NSURL URLWithString:@"https://upload-images.jianshu.io/upload_images/1877784-b4777f945878a0b9.jpg"];
     
     // 创建NSURLSession对象
     NSURLSession *session = [NSURLSession sharedSession];
@@ -39,11 +39,16 @@
         NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
         
         // 新文件路径
-        NSString *newFilePath = [documentsPath stringByAppendingPathComponent:@"QQ_V5.4.0.dmg"];
+        NSString *newFilePath = [documentsPath stringByAppendingPathComponent:@"1877784-b4777f945878a0b9.jpg"];
         
         NSLog(@"File downloaded to: %@",newFilePath);
         // 移动文件到新路径
         [[NSFileManager defaultManager] moveItemAtPath:location.path toPath:newFilePath error:nil];
+        // 回到主线程，刷新UI
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            self.imageView.image = [UIImage imageWithContentsOfFile:newFilePath];
+        });
         
     }];
     

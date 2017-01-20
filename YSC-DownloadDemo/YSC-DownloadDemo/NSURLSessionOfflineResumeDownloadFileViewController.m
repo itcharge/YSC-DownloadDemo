@@ -155,12 +155,13 @@
     
     NSLog(@"%ld",self.currentLength);
     
+    __weak typeof(self) weakSelf = self;
     // 获取主线程，不然无法正确显示进度。
     NSOperationQueue* mainQueue = [NSOperationQueue mainQueue];
     [mainQueue addOperationWithBlock:^{
         // 下载进度
-        self.progressView.progress =  1.0 * self.currentLength / self.fileLength;
-        self.progressLabel.text = [NSString stringWithFormat:@"当前下载进度:%.2f%%",100.0 * self.currentLength / self.fileLength];
+        weakSelf.progressView.progress =  1.0 * weakSelf.currentLength / weakSelf.fileLength;
+        weakSelf.progressLabel.text = [NSString stringWithFormat:@"当前下载进度:%.2f%%",100.0 * self.currentLength / self.fileLength];
     }];
 }
 

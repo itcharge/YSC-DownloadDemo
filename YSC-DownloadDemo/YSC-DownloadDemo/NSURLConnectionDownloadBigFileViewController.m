@@ -16,7 +16,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *progressLabel;
 
 
-
 /** NSURLConnection下载大文件需用到的属性 **********/
 /** 文件的总长度 */
 @property (nonatomic, assign) NSInteger fileLength;

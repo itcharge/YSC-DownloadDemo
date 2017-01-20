@@ -55,9 +55,15 @@
      */
     NSURLSessionDownloadTask *downloadTask = [manager downloadTaskWithRequest:request progress:^(NSProgress *downloadProgress) {
         
-        // 下载进度
-        self.progressView.progress = 1.0 * downloadProgress.completedUnitCount / downloadProgress.totalUnitCount;
-        self.progressLabel.text = [NSString stringWithFormat:@"当前下载进度:%.2f%%",100.0 * downloadProgress.completedUnitCount / downloadProgress.totalUnitCount];
+        __weak typeof(self) weakSelf = self;
+        // 获取主线程，不然无法正确显示进度。
+        NSOperationQueue* mainQueue = [NSOperationQueue mainQueue];
+        [mainQueue addOperationWithBlock:^{
+            // 下载进度
+            weakSelf.progressView.progress = 1.0 * downloadProgress.completedUnitCount / downloadProgress.totalUnitCount;
+            weakSelf.progressLabel.text = [NSString stringWithFormat:@"当前下载进度:%.2f%%",100.0 * downloadProgress.completedUnitCount / downloadProgress.totalUnitCount];
+        }];
+        
         
     } destination:^NSURL *(NSURL *targetPath, NSURLResponse *response) {
         
